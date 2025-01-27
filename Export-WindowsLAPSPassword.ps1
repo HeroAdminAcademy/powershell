@@ -1,4 +1,33 @@
-﻿[cmdletbinding()]
+﻿<#
+.SYNOPSIS
+Lo script estrae le password di Windows LAPS
+
+.DESCRIPTION
+Lo script estrae le password di Windows LAPS.
+
+.PARAMETER OU
+E' il parametro opzionale che indica la OU in cui si trovano i computer le cui password vanno esportate.
+Se omesso ricercherà tutti i computer dell'interno dominio.
+
+.EXAMPLE
+.\Export-WindowsLAPSPassword.ps1
+Estrae le password LAPS di tutti i computer del dominio
+
+.EXAMPLE
+.\Export-WindowsLAPSPassword.ps1 -OU "OU=LABS,DC=Heroadmin,DC=COM"
+Estrae le password LAPS di tutti i computer all'interno della OU "LABS"
+
+.EXAMPLE
+.\Export-WindowsLAPSPassword.ps1 -OU "OU=LABS,DC=Heroadmin,DC=COM" | Out-Grid
+Visualizza le password LAPS di tutti i computer all'interno della OU "LABS" in formato "griglia"
+
+.EXAMPLE
+.\Export-WindowsLAPSPassword.ps1 -OU "OU=LABS,DC=Heroadmin,DC=COM" | Export-CSV -Path "LAPSPassword.csv" -Encoding UTF8 -NoTypeInformation
+Esporta le password LAPS dei computer all'interno della OU "LABS" in formato CSV all'interno del file "LAPSPassword.csv"
+
+#>
+
+[cmdletbinding()]
 param(
     [string]$OU = ""  # Valore di default
 )
