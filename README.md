@@ -19,6 +19,13 @@ Example:
 .\Export-WindowsLAPSPassword.ps1 -OU "OU=LABS,DC=Heroadmin,DC=COM" | Export-CSV -Path "LAPSPassword.csv" -Encoding UTF8 -NoTypeInformation
 
 
+**Get-TemporaryGroupMembers**
+
+Example:
+Import-Module Get-TemporaryGroupMembers.ps1
+Get-TemporaryGroupMembers
+
+
 
 
 
