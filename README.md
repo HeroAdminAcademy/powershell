@@ -27,13 +27,13 @@ Get-TemporaryGroupMembers
 
 
 
-**Get-ACLMonitoringGPO**
+**Find-GPOCriticalRights**
 
 Example:
 
-Import-Module Get-ACLMonitoringGPO.ps1
+Import-Module Find-GPOCriticalRights.ps1
 
-Get-ACLMonitoringGPO
+Find-GPOCriticalRights
 
 
 
