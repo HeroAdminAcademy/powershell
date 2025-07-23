@@ -1,5 +1,5 @@
 ﻿
-function Get-ACLMonitoringGPO {
+function Find-GPOCriticalRights {
     [CmdletBinding()]
     param ()
 
