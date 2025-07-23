@@ -30,7 +30,7 @@ function Get-ACLMonitoringGPO {
 
     }
 
-    Get-ACLMonitoringGPO
+
 
     
 
