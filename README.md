@@ -27,6 +27,11 @@ Get-TemporaryGroupMembers
 
 
 
+**Get-ACLMonitoringGPO**
+
+Example:
+Import-Module Get-ACLMonitoringGPO.ps1
+Get-ACLMonitoringGPO
 
 
 
