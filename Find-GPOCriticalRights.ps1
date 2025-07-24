@@ -30,7 +30,5 @@ function Find-GPOCriticalRights {
 
     }
 
-    Get-ACLMonitoringGPO
-
     
 
